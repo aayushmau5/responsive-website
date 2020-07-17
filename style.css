@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-family: Arial;
+}
+.header {
+    background-color: #1abc9c;
+    text-align: center;
+    padding:60px;
+    color:white;
+}
+.header h1 {
+    font-family:Sofia;
+}
+.navbar {
+    display:flex;
+    background: #333333;
+}
+.navbar a {
+    text-decoration: none;
+    color:white;
+    padding:20px 40px;
+}
+.navbar a:hover {
+    color:black;
+    background: #ddd;
+}
+.navbar i {
+    font-size: 19px;
+    padding-right: 5px;
+}
+.main-content {
+    display: flex;
+}
+.side-bar {
+    flex:20%;
+    padding:20px;
+    background: #f1f1f1;
+}
+.image img {
+    width: 100%;
+    height:auto;
+}
+.main {
+    flex:80%;
+    padding: 20px;
+}
+.weather {
+    text-align: center;
+}
+#btn,#repo {
+    color: white;
+    background-color: #02C39A;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid gray;
+    font-family: Amaranth;
+    font-size: 16px;
+    transition: 0.3s;
+}
+#btn:hover,#repo:hover {
+    background-color: #00A896;
+    border-color: black;
+}
+.repo-btn {
+    text-align: center;
+}
+#repo a {
+    text-decoration: none;
+    color:white;
+}
+.card {
+    border:1px solid gray;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow:1px 1px 5px 3px gray ;
+    margin-bottom: 40px;
+}
+.card img {
+    width:100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.footer {
+    background: #333333;
+    text-align: center;
+    padding:40px;
+}
+.footer a {
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.footer a:hover {
+    color:#02C39A;
+}
+.footer i {
+    font-size: 25px;
+    padding-right: 5px;
+}
+@media (max-width:700px) {
+    .navbar,.main-content {
+        flex-direction: column;
+    }
+}
